@@ -1,0 +1,62 @@
+.sidebar{
+    height: 100vh;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #f0f4f9;
+    padding: 20px 15px;
+}
+
+.sidebar img{
+    width: 20px;
+}
+
+.sidebar .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar .menu{
+    cursor: pointer;
+}
+
+.sidebar .new-chat{
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #e2e6eb;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #585858;
+}
+
+.recent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    animation: fadeIn 1.5s;
+}
+
+.recent-entry{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.recent-entry:hover{
+    background-color: #e2e6eb;
+}
+
+@media (max-width : 600px){
+    .sidebar{
+        display: none;
+    }
+}
